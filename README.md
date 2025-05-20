@@ -1,23 +1,25 @@
-## 📚 주차별 활동 요약
+## 📚 주차별 활동 요약 
 
 | 주차 | 활동 요약 |
-|------|-----------|
+|------|---------|
 | Week 1 | [🔗 summary](./week/week1/summary.md) |
-| Week 2 | 🔜 준비 중 | - |
-| Week 3 | 🔜 준비 중 | - |
-| Week 4 | 🔜 준비 중 | - |
-| Week 5 | 🔜 준비 중 | - |
-| Week 6 | 🔜 준비 중 | - |
-| Week 7 | 🔜 준비 중 | - |
-| Week 8 | 🔜 준비 중 | - |
+| Week 2 | 🔜 준비 중 |
+| Week 3 | 🔜 준비 중 |
+| Week 4 | 🔜 준비 중 |
+| Week 5 | 🔜 준비 중 |
+| Week 6 | 🔜 준비 중 |
+| Week 7 | 🔜 준비 중 |
+| Week 8 | 🔜 준비 중 |
 ---
 
 ## 🎯 퀘스트
 
 | 퀘스트 번호 | 설명 | 링크 |
-|-------------|------|------|
-| Quest 1 | 스터디 규칙에 기반한 미션 진행 | [바로가기](./quest/quest1/) |
-| Quest 2 | ⏳ 예정 | - |
+|-----------|-----|------|
+| Quest 1 | 스택 & 큐 | [바로가기](./quest/quest1/quest1.md) |
+| Quest 2 | 연결리스트 | [바로가기](./quest/quest2/quest2.md) |
+| Quest 3 | 재귀 | [바로가기](./quest/quest3/quest3.md) |
+| Quest 4 | ⏳ 예정 | - |
 
 ---
 
@@ -31,12 +33,12 @@
 ## 👥 팀원 소개
 
 | 이름 | GitHub | 백준허브 레포 |
-|------|--------|---------------|
-| 강주현 | - | - |
-| 박재민 | [@jamminP](https://github.com/jamminP) | [Link](https://github.com/jamminP/javascript-algorithms) |
-| 백서영 | - | - |
-| 조민지 | - | - |
-| 이재현 | - | - |
-| 함서연 | - | - |
+|-----|--------|-------------|
+| 강주현 | [강주현](https://github.com/jjub0217) | [Link](https://github.com/jjub0217/Algorithm_-Training) |
+| 박재민 | [박재민](https://github.com/jamminP) | [Link](https://github.com/jamminP/javascript-algorithms) |
+| 백서영 | [백서영](https://github.com/sysysysyb) | [Link](https://github.com/sysysysyb/Study_Algorithm) |
+| 조민지 | [조민지](https://github.com/minji105) | [Link](https://github.com/minji105/algorithm) |
+| 이재현 | [이재현](https://github.com/JaeHyunLee123) | [Link](https://github.com/JaeHyunLee123/coding-test) |
+| 함서연 | [함서연](https://github.com/makee-ham) | [Link](https://github.com/makee-ham/algo-gogo) |
 
 ---
