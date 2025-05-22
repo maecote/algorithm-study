@@ -30,6 +30,14 @@
 
 ---
 
+### Day 4 (05.22)
+
+- 🔗 문제: [[level 1] 숫자 문자열과 영단어 - 81301](https://school.programmers.co.kr/learn/courses/30/lessons/81301)
+- 📁 코드: [replaceAll을 활용한 풀이](https://github.com/sysysysyb/Study_Algorithm/tree/main/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4/1/81301.%E2%80%85%EC%88%AB%EC%9E%90%E2%80%85%EB%AC%B8%EC%9E%90%EC%97%B4%EA%B3%BC%E2%80%85%EC%98%81%EB%8B%A8%EC%96%B4)
+- 💡 메모: 문자열 내에서 특정 문자열을 모두 찾아 원하는 값으로 바꿀 수 있는 replaceAll을 활용해 문제를 풀었다. 그리고 다른 사람의 풀이에서 split과 join을 이용해 비슷한 로직을 구현할 수 있다는 점을 확인할 수 있었다. 다만 replaceAll은 문자열을 직접 바꾸는 것이 아닌, 수정된 문자열을 반환하는 함수라는 점을 잊지 말아야겠다.
+
+---
+
 ## 📌 이번 주 회고
 
 -
