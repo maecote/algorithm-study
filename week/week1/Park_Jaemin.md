@@ -10,6 +10,7 @@
 - 🔗 문제: [132267.콜라문제](https://school.programmers.co.kr/learn/courses/30/lessons/132267)
 - 📁 코드: [lv1. 콜라 문제 - 132267](https://github.com/jamminP/javascript-algorithms/tree/main/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4/1/132267.%E2%80%85%EC%BD%9C%EB%9D%BC%E2%80%85%EB%AC%B8%EC%A0%9C)
 - 💡 메모: 간단한 사칙 연산을 사용하는 문제. a개당 b개의 보너스 상품에 대한 값을 구하는 문제
+<br>
     ```
     while (n >= a) {
             const exchanged = Math.floor(n / a) * b;
@@ -18,11 +19,14 @@
         }
     ```
 
+---
+
 ### Day 2 (05.20)
 
 - 🔗 문제: [134240.푸드파이트대회](https://school.programmers.co.kr/learn/courses/30/lessons/134240)
 - 📁 코드: [lv1. 콜라 문제 - 132267](https://github.com/jamminP/javascript-algorithms/tree/main/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4/1/134240.%E2%80%85%ED%91%B8%EB%93%9C%E2%80%85%ED%8C%8C%EC%9D%B4%ED%8A%B8%E2%80%85%EB%8C%80%ED%9A%8C)
 - 💡 메모: 좌우에 같은 양의 char을 배치해야하는 문제. 중간에는 0이 와야하는 String 문자열을 만들어야 했습니다. for문을 통해서 간단하게 구현을 실행. `repeat()`를 사용하는 방식이 있는 것 같은데 이것보단 `join()`을 쓴 경우는 좋은 것 같아서 나중에 비슷한 문제를 풀 때, 참고해야 겠다.
+<br>
     ```
     food.shift();
     
@@ -46,24 +50,82 @@
 
 - 🔗 문제: [12915.문자열내마음대로정렬하기](https://school.programmers.co.kr/learn/courses/30/lessons/12915)
 - 📁 코드: [lv1. 문자열 내 마음대로 정렬하기 - 12915](https://github.com/jamminP/javascript-algorithms/tree/main/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4/1/12915.%E2%80%85%EB%AC%B8%EC%9E%90%EC%97%B4%E2%80%85%EB%82%B4%E2%80%85%EB%A7%88%EC%9D%8C%EB%8C%80%EB%A1%9C%E2%80%85%EC%A0%95%EB%A0%AC%ED%95%98%EA%B8%B0)
-- 💡 메모: 좌우에 같은 양의 char을 배치해야하는 문제. 중간에는 0이 와야하는 String 문자열을 만들어야 했습니다. for문을 통해서 간단하게 구현을 실행. `repeat()`를 사용하는 방식이 있는 것 같은데 이것보단 `join()`을 쓴 경우는 좋은 것 같아서 나중에 비슷한 문제를 풀 때, 참고해야 겠다.
+- 💡 메모: `sort()`를 사용하여 푼 문제입니다. `map()`을 통해 key로 원본 문자열, value로 n번째의 문자열을 객체로 만들고자 했는데 굳이 그렇게까지는 안해도 된다고 판단을 했습니다.
+주현님이 `localeCompare()`에 대해 설명해준 것이 기억이 나서 사용을 시작함. `localeCompare()`은 비교값에 위치에 따라 1,0,-1을 반환하는 것. `sort()`와 같이 활용하여 간단하게 정렬을 완료.
+<br>
     ```
-    food.shift();
-    
-    for(let i = 0; i < food.length; i++){
-        for(let j = 0; j < Math.floor(food[i]/2); j++){
-               answer += (i + 1);
-        }
-    }
-    answer += 0;
-    
-    for(let i = food.length - 1; i >= 0; i--){
-        for(let j = 0; j < Math.floor(food[i]/2); j++){
-               answer += (i + 1);
-        }
-    }
+        return strings.sort((a,b) => 
+			a[n] === b[n] ? a.localeCompare(b) : a[n].localeCompare(b[n]) 
+        );
     ```
+    
 - notion: [Link](https://www.notion.so/12915-1fa389abd4258010857bfe3c4ae183a5?pvs=4)
+
+---
+
+### Day 4 (05.22)
+
+- 🔗 문제: [138477. 명예의 전당(1)](https://school.programmers.co.kr/learn/courses/30/lessons/138477)
+- 📁 코드: [lv1. 명예의 전당 (1)](https://github.com/jamminP/javascript-algorithms/tree/main/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4/1/138477.%E2%80%85%EB%AA%85%EC%98%88%EC%9D%98%E2%80%85%EC%A0%84%EB%8B%B9%E2%80%85%EF%BC%881%EF%BC%89)
+- 💡 메모: 이번 문제는 상위 n명 중에서 최하위인 사람을 return해서 저장하는 문제였습니다. 처음에는 `for` loop와 `sort()`를 사용하여 문제를 풀었지만, `reduce`와 친해지기 위해서 `reduece`를 사용하여 새롭게 풀어봤습니다. 하지만 막상 풀고난 뒤에 보니 완전히 `reduce`를 활용한 거 같지는 않아 추가적으로 학습을 하고자 합니다.
+<br>
+    ```
+        function solution(k, score) {
+            var answer = [];
+            
+            const data = [];
+            
+            score.reduce((acc,curr) => {
+                if(data.length < k){
+                    data.push(curr);
+                    data.sort((a,b) => a-b);
+                    answer.push(data[0]);
+                }    
+                else{
+                    if(data[0] < curr){
+                        data.push(curr);
+                        data.shift();
+                        data.sort((a,b) => a-b);
+                        answer.push(data[0]);
+                    }else{
+                        answer.push(data[0]);
+                    }
+                }
+            },[]);
+            
+            return answer;
+        }
+    ```
+
+<br>
+- notion: [Link](https://www.notion.so/138477-1-1fb389abd42580b98302c519f041bfa9?pvs=4)
+
+---
+
+### Day 5 (05.23)
+
+- 🔗 문제: []()
+- 📁 코드: []()
+- 💡 메모: 
+- notion: [Link]()
+
+---
+
+### Day 6 (05.24)
+
+- 🔗 문제: []()
+- 📁 코드: []()
+- 💡 메모: 
+- notion: [Link]()
+
+---
+
+### Day 7 (05.25)
+
+- 🔗 문제: []()
+- 📁 코드: []()
+- 💡 메모: 
+- notion: [Link]()
 
 ---
 
