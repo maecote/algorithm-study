@@ -104,10 +104,18 @@
 
 ### Day 5 (05.23)
 
-- 🔗 문제: []()
-- 📁 코드: []()
-- 💡 메모: 
-- notion: [Link]()
+- 🔗 문제: [12980. 점프와 순간 이동](https://school.programmers.co.kr/learn/courses/30/lessons/12980)
+- 📁 코드: [lv2. 점프와 순간 이동](https://github.com/jamminP/javascript-algorithms/tree/main/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4/2/12980.%E2%80%85%EC%A0%90%ED%94%84%EC%99%80%E2%80%85%EC%88%9C%EA%B0%84%E2%80%85%EC%9D%B4%EB%8F%99)
+- 💡 메모: 이번 문제는 가장 적은 cost를 사용하여 움직이는 방법이였습니다. 0부터 N까지 가기위해서 K값이 소요하는 이동과 현재까지 이동한 거리에 * 2만큼 이동하는 텔레포트의 비용은 0인 문제에서 가장 적은 합계 cost값을 구해야했습니다. K의 값은 정해지지 않았기 때문에 가장 적은 1을 선정하고, 2배를 이동하는 no cost를 최대한 활용하기 위해 2진수에서 1값인 것만 추출하는 방식을 사용했습니다.
+<br>
+    ``` js
+        function solution(n){
+            return n.toString(2).split('').filter(e => e === '1').length;
+        }
+    ```
+<br>
+
+- notion: [Link](https://www.notion.so/12980-1fc389abd42580f6887efaa8686a8b86?pvs=4)
 
 ---
 
