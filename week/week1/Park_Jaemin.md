@@ -11,13 +11,13 @@
 - 📁 코드: [lv1. 콜라 문제 - 132267](https://github.com/jamminP/javascript-algorithms/tree/main/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4/1/132267.%E2%80%85%EC%BD%9C%EB%9D%BC%E2%80%85%EB%AC%B8%EC%A0%9C)
 - 💡 메모: 간단한 사칙 연산을 사용하는 문제. a개당 b개의 보너스 상품에 대한 값을 구하는 문제
 <br>
-    ```
+
     while (n >= a) {
             const exchanged = Math.floor(n / a) * b;
             answer += exchanged;
             n = exchanged + (n % a);
         }
-    ```
+    
 
 ---
 
@@ -27,7 +27,7 @@
 - 📁 코드: [lv1. 콜라 문제 - 132267](https://github.com/jamminP/javascript-algorithms/tree/main/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4/1/134240.%E2%80%85%ED%91%B8%EB%93%9C%E2%80%85%ED%8C%8C%EC%9D%B4%ED%8A%B8%E2%80%85%EB%8C%80%ED%9A%8C)
 - 💡 메모: 좌우에 같은 양의 char을 배치해야하는 문제. 중간에는 0이 와야하는 String 문자열을 만들어야 했습니다. for문을 통해서 간단하게 구현을 실행. `repeat()`를 사용하는 방식이 있는 것 같은데 이것보단 `join()`을 쓴 경우는 좋은 것 같아서 나중에 비슷한 문제를 풀 때, 참고해야 겠다.
 <br>
-    ```
+
     food.shift();
     
     for(let i = 0; i < food.length; i++){
@@ -42,7 +42,6 @@
                answer += (i + 1);
         }
     }
-    ```
 
 ---
 
@@ -53,11 +52,10 @@
 - 💡 메모: `sort()`를 사용하여 푼 문제입니다. `map()`을 통해 key로 원본 문자열, value로 n번째의 문자열을 객체로 만들고자 했는데 굳이 그렇게까지는 안해도 된다고 판단을 했습니다.
 주현님이 `localeCompare()`에 대해 설명해준 것이 기억이 나서 사용을 시작함. `localeCompare()`은 비교값에 위치에 따라 1,0,-1을 반환하는 것. `sort()`와 같이 활용하여 간단하게 정렬을 완료.
 <br>
-    ```
+
         return strings.sort((a,b) => 
-			a[n] === b[n] ? a.localeCompare(b) : a[n].localeCompare(b[n]) 
-        );
-    ```
+			a[n] === b[n] ? a.localeCompare(b) : a[n].localeCompare(b[n]);
+
     
 - notion: [Link](https://www.notion.so/12915-1fa389abd4258010857bfe3c4ae183a5?pvs=4)
 
@@ -69,7 +67,7 @@
 - 📁 코드: [lv1. 명예의 전당 (1)](https://github.com/jamminP/javascript-algorithms/tree/main/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4/1/138477.%E2%80%85%EB%AA%85%EC%98%88%EC%9D%98%E2%80%85%EC%A0%84%EB%8B%B9%E2%80%85%EF%BC%881%EF%BC%89)
 - 💡 메모: 이번 문제는 상위 n명 중에서 최하위인 사람을 return해서 저장하는 문제였습니다. 처음에는 `for` loop와 `sort()`를 사용하여 문제를 풀었지만, `reduce`와 친해지기 위해서 `reduece`를 사용하여 새롭게 풀어봤습니다. 하지만 막상 풀고난 뒤에 보니 완전히 `reduce`를 활용한 거 같지는 않아 추가적으로 학습을 하고자 합니다.
 <br>
-    ```
+
         function solution(k, score) {
             var answer = [];
             
@@ -95,7 +93,7 @@
             
             return answer;
         }
-    ```
+
 
 <br>
 - notion: [Link](https://www.notion.so/138477-1-1fb389abd42580b98302c519f041bfa9?pvs=4)
@@ -108,11 +106,11 @@
 - 📁 코드: [lv2. 점프와 순간 이동](https://github.com/jamminP/javascript-algorithms/tree/main/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4/2/12980.%E2%80%85%EC%A0%90%ED%94%84%EC%99%80%E2%80%85%EC%88%9C%EA%B0%84%E2%80%85%EC%9D%B4%EB%8F%99)
 - 💡 메모: 이번 문제는 가장 적은 cost를 사용하여 움직이는 방법이였습니다. 0부터 N까지 가기위해서 K값이 소요하는 이동과 현재까지 이동한 거리에 * 2만큼 이동하는 텔레포트의 비용은 0인 문제에서 가장 적은 합계 cost값을 구해야했습니다. K의 값은 정해지지 않았기 때문에 가장 적은 1을 선정하고, 2배를 이동하는 no cost를 최대한 활용하기 위해 2진수에서 1값인 것만 추출하는 방식을 사용했습니다.
 <br>
-    ``` js
+
         function solution(n){
             return n.toString(2).split('').filter(e => e === '1').length;
         }
-    ```
+
 <br>
 
 - notion: [Link](https://www.notion.so/12980-1fc389abd42580f6887efaa8686a8b86?pvs=4)
