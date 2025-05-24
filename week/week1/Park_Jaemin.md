@@ -120,10 +120,23 @@
 
 ### Day 6 (05.24)
 
-- 🔗 문제: []()
-- 📁 코드: []()
-- 💡 메모: 
-- notion: [Link]()
+- 🔗 문제: [42885. 구명보트](https://school.programmers.co.kr/learn/courses/30/lessons/42885)
+- 📁 코드: [lv2. 구명보트](https://github.com/jamminP/javascript-algorithms/tree/main/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4/2/42885.%E2%80%85%EA%B5%AC%EB%AA%85%EB%B3%B4%ED%8A%B8)
+- 💡 메모: 이번 문제는 그리디 알고리즘을 사용했습니다. 그 중 시작과 끝점의 이동을 사용하는 투 포인터 방식을 응용하여 문제를 해결했습니다. 최대 2명씩 탈 수 있는 보트에 사람을 넣어서 움직이는 최소의 경우수를 찾아야 했기에, `sort()`를 통해 값을 정렬하고, 가장 큰값과 가장 작은 값을 이동하면서 찾을 수 있도록 했습니다. 제한을 넘기지 않는다면 start값을 올려 위치를 올려 limit에 걸리게 되면 end값을 줄이며 answer을 올리게 했습니다.
+
+<br>
+
+    let start = 0;
+    let end = people.length - 1;
+    
+    while(start <= end ){
+        if(people[start] + people[end] <= limit){
+            start++;
+        }
+        end--;
+        answer++;
+    }
+<br>
 
 ---
 
