@@ -142,7 +142,7 @@
 
 ### Day 7 (05.25)
 
-- 🔗 문제: [138476. 귤 고르기]()
+- 🔗 문제: [138476. 귤 고르기](https://school.programmers.co.kr/learn/courses/30/lessons/138476)
 - 📁 코드: [lv2. 귤 고르기](https://github.com/jamminP/javascript-algorithms/tree/main/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4/2/138476.%E2%80%85%EA%B7%A4%E2%80%85%EA%B3%A0%EB%A5%B4%EA%B8%B0)
 - 💡 메모: 이번 문제는 종류를 최소한하여, k의 값을 얻는 방법을 구하는 문제였습니다. 이러한 문제는 `Map`을 사용하여, 각각의 key값에 value를 늘려서 최소한의 가짓수를 구해야하는 것이기 때문에 `sort()`를 하여 가장 많은 경우의 수를 가진 것의 value의 값을 빼는 것으로 연산을 진행했습니다.
 
