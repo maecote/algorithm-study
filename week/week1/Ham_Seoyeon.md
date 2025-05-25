@@ -36,8 +36,20 @@
 - 📁 코드: [정규표현식 외워야 하나 너무 편하다](https://github.com/makee-ham/algo-gogo/tree/main/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4/2/12911.%E2%80%85%EB%8B%A4%EC%9D%8C%E2%80%85%ED%81%B0%E2%80%85%EC%88%AB%EC%9E%90)
 - 💡 메모: 그냥 딱 보자마자 Ah! regex 각! 하고 Number.toString(2) 고거랑 match(/1/g) 하고 length 구했더니 고마 쉽다. 멋지고 간편한데 생긴 게 무서워서 외울 엄두가 안 나는 정규표현식... 시간 나면 들여다 봐야겠다!
 
+### Day 6 (05.24)
+
+- 평일의 피로 + 주간 일정 수행 후 뻗어서 무려 16시간 수면으로 하루를 스킵하다.......🥲
+
+### Day 7 (05.25)
+
+- 🔗 문제: [재현퀘스트 <재귀편>](https://github.com/maecote/algorithm-study/blob/main/quest/quest3/quest3.md)
+- 📁 코드 1: [기초문제 - 재귀 연습](https://github.com/makee-ham/algo-gogo/tree/main/other-algorithms/recursive-basic)
+- 📁 코드 2: [도전문제 - '삼총사' 재귀로 풀기](https://github.com/makee-ham/algo-gogo/tree/main/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4/1/131705.%E2%80%85%EC%82%BC%EC%B4%9D%EC%82%AC)
+- 💡 메모: 재귀 알고리즘은 Base Case로 stop condition을 정하고, Recursive Case에서 재귀를 돌리는데 이는 반드시 Base Case의 stop condition을 향해 수렴해야 한다. 이 로직은 문제를 쪼개어 푸는 것과 관련이 있으며, 중첩 반복문을 이용해 푸는 모든 문제는 재귀 알고리즘으로도 구현이 가능하다.
+
 ---
 
 ## 📌 이번 주 회고
 
-- 회고회고회고
+- 전반적으로, 시간 내에 푼다는 생각 때문에 "문제 분석", "해법 설계"에 대한 투자가 부족했다. 조금 더 차분하게 이 문제는 어떻게, 무엇을 사용하여 풀면 좋을지 적어보면서 풀어나가면 좋을 것 같다.
+- 그리고 문제 풀이에 대해 부담을 느끼지 않았으면 한다. 기존대로 재미있게, 이런 게 있구나~ 하면서 차차 나아가보자. 아직 기본적인 화면 구현도 어려워하는 때이기에, 원래 목적대로 "자바스크립트 활용에 능숙해지기"와 "프로그래밍적 사고 방식에 익숙해지기"에 집중하자. 파이팅!
