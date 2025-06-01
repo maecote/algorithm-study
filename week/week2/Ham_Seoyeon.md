@@ -36,21 +36,16 @@
 - 📁 코드: ["/"로 replace 후 every char가 "/"인지 확인](https://github.com/makee-ham/algo-gogo/tree/main/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4/0/120956.%E2%80%85%EC%98%B9%EC%95%8C%EC%9D%B4%E2%80%85%EF%BC%881%EF%BC%89)
 - 💡 메모: 음... 뭔가 아기가 발음할 수 있는 문자열 부분을 "/"로 replace하고, 그래서 문자열의 모든 char가 every를 써서 "/"로만 구성되어 있는지, 그렇다면 result++ 식으로 풀었는데... 탐탁지 않아서 스터디원 분들의 생각과 아이디어를 여쭈었다.
 
-### Day 6 (05.31)
+### Day 6 (05.31) + Day 7 (06.01)
 
-- 🔗 문제: [Lv 2)]()
-- 📁 코드: []()
-- 💡 메모:
-
-### Day 7 (06.01)
-
-- 🔗 문제: [재현퀘스트 <재귀편>](https://github.com/maecote/algorithm-study/blob/main/quest/quest3/quest3.md)
-- 📁 코드 1: [기초문제 - 재귀 연습](https://github.com/makee-ham/algo-gogo/tree/main/other-algorithms/recursive-basic)
-- 📁 코드 2: [도전문제 - '삼총사' 재귀로 풀기](https://github.com/makee-ham/algo-gogo/tree/main/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4/1/131705.%E2%80%85%EC%82%BC%EC%B4%9D%EC%82%AC)
-- 💡 메모:
+- 한 주간 과제를 총망라한 실습을 해보느라 코테나 알고리즘 공부를 할 시간이 없었다...
+- 그래도 혹시 모르니 레포지토리 공유!!! [키메라 투두](https://github.com/makee-ham/todo-list)
 
 ---
 
 ## 📌 이번 주 회고
 
-- 약간 뇌가 지친 느낌...?
+- 약간 뇌가 지친 느낌...?이었다. 온종일 몹시 피곤하고 모든 일이 힘들게 느껴졌던 한 주였다.
+- 확 퍼지지 않도록 건강이나 기분 관리 잘 하면서 공부해야겠다는 생각이 많이 들었다.
+- 생각보다 주말에 복습에 투자해야 할 시간이 많이 늘어날 것 같다. 주중에도 재현퀘스트(알고리즘 공부)를 시간이 나면 하는 게 좋겠다.
+- 그래도 스터디원 분들과 수다 떠는 시간도 가졌어서 즐겁고 보람찬 한 주라고 생각한다. 차근차근 파이팅!
