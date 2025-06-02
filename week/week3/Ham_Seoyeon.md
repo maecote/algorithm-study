@@ -8,9 +8,9 @@
 
 ### Day 1 (06.02)
 
-- 🔗 문제: [Lv 2) 피보나치 수 - 12945](https://school.programmers.co.kr/learn/courses/30/lessons/12945)
-- 📁 코드: [무식한 풀이: 냅다 BigInt](https://github.com/makee-ham/algo-gogo/tree/main/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4/2/12945.%E2%80%85%ED%94%BC%EB%B3%B4%EB%82%98%EC%B9%98%E2%80%85%EC%88%98)
-- 💡 메모: 지난 주에 공부한 재귀로도 풀어보고, 그냥 반복문으로도 풀어보고. 다 안 되는 게 숫자가 너무 커져서 그렇구나! 라면 보통 % 연산자를 써서 숫자 크기가 너무 안 커지게, 그때그때 나머지를 받아내서 풀었을 것이다. 하지만 너무도 상남자였던 나는 "그래, 숫자가 크단 말이지. 그럼 빅인트를 쓰면 되지 않겠나!" 하면서 럼주 마신 선장처럼 그렇게 n을 붙여 풀어버렸다 (...) 그래도 한 가지 알게된 건, **BigInt는 Number와 섞어서 연산할 수 없고, BigInt끼리만 연산 가능하다**는 것! ~~역시 사나이는 사나이를 알아보는 건가~~
+- 🔗 문제: [Lv 1) 피보나치 수 - 12945](https://school.programmers.co.kr/learn/courses/30/lessons/131128)
+- 📁 코드: [재현 퀘스트 - 빈도수 세기 패턴 활용](https://github.com/makee-ham/algo-gogo/tree/main/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4/1/131128.%E2%80%85%EC%88%AB%EC%9E%90%E2%80%85%EC%A7%9D%EA%BF%8D)
+- 💡 메모: 문제가 있다. 성능이 너무 좋지 않다. (메모리: 206 MB, 시간: 781.22 ms) 아직 시간 복잡도를 측정하는 방법을 모르는데, **_다음 주 스터디 시간에 내 코드의 문제점, 시간 복잡도 줄일 개선 방법 등을 스터디원 분들께 여쭈어야 할 것 같다._** [코드](https://github.com/makee-ham/algo-gogo/blob/main/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4/1/131128.%E2%80%85%EC%88%AB%EC%9E%90%E2%80%85%EC%A7%9D%EA%BF%8D/%EC%88%AB%EC%9E%90%E2%80%85%EC%A7%9D%EA%BF%8D.js)
 
 ### Day 2 (06.03)
 
