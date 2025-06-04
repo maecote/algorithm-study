@@ -18,7 +18,7 @@
 
 ### Day 3 (06.04)
 
-- 🔗 문제: [11. Container With Most Water](https://leetcode.com/problems/container-with-most-water/description/?envType=problem-list-v2&envId=two-pointers)
+- 🔗 문제: [11. Container With Most Water(Med. level)](https://leetcode.com/problems/container-with-most-water/description/?envType=problem-list-v2&envId=two-pointers)
 - 📁 코드: [재현퀘스트 - 다중 포인터 활용 Two Pointers 알고리즘 적용](https://github.com/makee-ham/algo-gogo/tree/main/0011-container-with-most-water)
 - 💡 메모: 이번엔 방법 설계를 비교적 금방 했다! left랑 right index-pointer를 잡고, max 값을 업데이트 해가며 greedy하게? left index < right index일 동안의 경우를 전부 탐색했다! 공부한 걸 바로 적용하니 너무 재밌다. LeetCode 여기 문제 되게 좋네! 자주 가봐야겠다.
 
