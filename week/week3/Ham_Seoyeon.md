@@ -24,9 +24,11 @@
 
 ### Day 4 (06.05)
 
-- 🔗 문제: [LV 1) 체육복 - 42862](https://school.programmers.co.kr/learn/courses/30/lessons/42862)
-- 📁 코드: [filter로 요소 제거해주기](https://github.com/makee-ham/algo-gogo/tree/main/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4/1/42862.%E2%80%85%EC%B2%B4%EC%9C%A1%EB%B3%B5)
-- 💡 메모: 이 사람 문제 또 끝까지 안 읽었다. "여별 체육복 가져왔어도 도난당했으면 남 못 빌려줌"이란 조건을 놓쳐서 해당 조건을 추가하여 다시 풀었다. **제발 문제 좀 제대로 읽자!**
+- 🔗 문제: [LV 1) 크기가 작은 부분문자열 - 147355](https://school.programmers.co.kr/learn/courses/30/lessons/147355)
+- 📁 코드: [재현퀘스트 - sliding window pattern 과제 (리팩토링했더니 '브루트 포스 스타일 슬라이딩 윈도우'라는 혼종의 탄생 - 암튼 브루트 포스인데 이 경우에선 시간/메모리 성능 더 나음)](https://github.com/makee-ham/algo-gogo/tree/main/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4/1/147355.%E2%80%85%ED%81%AC%EA%B8%B0%EA%B0%80%E2%80%85%EC%9E%91%EC%9D%80%E2%80%85%EB%B6%80%EB%B6%84%EB%AC%B8%EC%9E%90%EC%97%B4)
+- 💡 메모: "음... 굳이 배열로 바꿨어야 했나? 메모리야 미안해..." 라는 생각에 나름대로 리팩토링 진행. 애초에 p의 길이만큼 문자열을 substring하고 이를 전체 문자열 길이에 p의 길이를 뺀 만큼 반복하여(어차피 뒤까지 빼오니까) 구했는데... 써보고 나니 이거, brute force인 것 같다...? <u>sliding window의 핵심은 "계산한 값을 **_누적_**해서 관리하는 것"에 있다.</u> window를 쭉쭉 밀면서 빠져나간 값은 빼고 새로 들어온 값은 더하고, 그런 식으로. 그런데 내가 한 두 번째 리팩토링(?) 버전은 "모든 i에 대해 t.substring(i, i + p.length)를 매번 잘라서 숫자로 바꿔서 비교"하기 때문에 **_윈도우마다 완전히 처음부터 새로 계산하는 구조_** 여서 brute force이면서도 생긴 건 또 p.length씩 슬라이드하는 구조이다. (그렇다. 이건 그냥 brute force이다.) 그런데 테스트 케이스가 이상한 건지 여기서는 brute force의 성능이 미묘하게 더 좋았다. 5ms랑 1MB 차이!...
+- 참고: 그냥 아무것도 믿을 수 없다... 제출할 때마다 다르게 나온다(이미지 참고)... _난 이제 프로그래머스 불신증에 걸리고 말았다..._
+  ![뭐시여](image.png)
 
 ### Day 5 (06.06)
 
