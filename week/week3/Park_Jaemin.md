@@ -6,149 +6,99 @@
 
 ---
 
-### Day 1 (05.19)
+### Day 1 (06.02)
 
-- 🔗 문제: [132267.콜라문제](https://school.programmers.co.kr/learn/courses/30/lessons/132267)
-- 📁 코드: [lv1. 콜라 문제 - 132267](https://github.com/jamminP/javascript-algorithms/tree/main/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4/1/132267.%E2%80%85%EC%BD%9C%EB%9D%BC%E2%80%85%EB%AC%B8%EC%A0%9C)
-- 💡 메모: 간단한 사칙 연산을 사용하는 문제. a개당 b개의 보너스 상품에 대한 값을 구하는 문제
-  <br>
-
-      while (n >= a) {
-              const exchanged = Math.floor(n / a) * b;
-              answer += exchanged;
-              n = exchanged + (n % a);
-          }
+- 💡 메모: react에 새로운 기능을 공부하느라 못풀었습니다.
 
 ---
 
-### Day 2 (05.20)
+### Day 2 (06.03)
 
-- 🔗 문제: [134240.푸드파이트대회](https://school.programmers.co.kr/learn/courses/30/lessons/134240)
-- 📁 코드: [lv1. 콜라 문제 - 132267](https://github.com/jamminP/javascript-algorithms/tree/main/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4/1/134240.%E2%80%85%ED%91%B8%EB%93%9C%E2%80%85%ED%8C%8C%EC%9D%B4%ED%8A%B8%E2%80%85%EB%8C%80%ED%9A%8C)
-- 💡 메모: 좌우에 같은 양의 char을 배치해야하는 문제. 중간에는 0이 와야하는 String 문자열을 만들어야 했습니다. for문을 통해서 간단하게 구현을 실행. `repeat()`를 사용하는 방식이 있는 것 같은데 이것보단 `join()`을 쓴 경우는 좋은 것 같아서 나중에 비슷한 문제를 풀 때, 참고해야 겠다.
-  <br>
+- 🔗 문제: [17681.[1차] 비밀지도](https://school.programmers.co.kr/learn/courses/30/lessons/17681)
+- 📁 코드: [lv1. [1차] 비밀지도 - 17681](https://github.com/jamminP/javascript-algorithms/tree/main/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4/1/17681.%E2%80%85%EF%BC%BB1%EC%B0%A8%EF%BC%BD%E2%80%85%EB%B9%84%EB%B0%80%EC%A7%80%EB%8F%84)
+- 💡 메모: 이번 문제는 `toString`과 `padStart`를 사용하여 쉽게 문제를 풀었습니다. `arr.toString(2)`을 하게 되면 `9 = 1001`로 값이 변경되게 됩니다.
 
-      food.shift();
+하지만 이렇게 되면 n값이 5인 경우에 앞이 0이 붙어야 하는데 이를 해결할 수 없어서 사용한 것이 `padStart(n, '0'))`입니다. 이 함수를 사용하면 n의 자리만큼 빈칸에 '0'을 채울 수 있었습니다. 만약에 '1'을 채우고 싶다면 0대신 1을 넣으면 됩니다. 마지막으로 두 값 중 하나만 1이면 #이 들어가니 `AND연산자(||)`를 사용하여 풀이를 마무리 했습니다.
 
-      for(let i = 0; i < food.length; i++){
-          for(let j = 0; j < Math.floor(food[i]/2); j++){
-                 answer += (i + 1);
-          }
-      }
-      answer += 0;
+```js
+const data1 = arr1.map((arr) => arr.toString(2).padStart(n, "0"));
+const data2 = arr2.map((arr) => arr.toString(2).padStart(n, "0"));
 
-      for(let i = food.length - 1; i >= 0; i--){
-          for(let j = 0; j < Math.floor(food[i]/2); j++){
-                 answer += (i + 1);
-          }
-      }
+for (let i = 0; i < n; i++) {
+  let dataString = "";
 
----
+  let mapA = data1[i].split("");
+  let mapB = data2[i].split("");
 
-### Day 3 (05.21)
-
-- 🔗 문제: [12915.문자열내마음대로정렬하기](https://school.programmers.co.kr/learn/courses/30/lessons/12915)
-- 📁 코드: [lv1. 문자열 내 마음대로 정렬하기 - 12915](https://github.com/jamminP/javascript-algorithms/tree/main/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4/1/12915.%E2%80%85%EB%AC%B8%EC%9E%90%EC%97%B4%E2%80%85%EB%82%B4%E2%80%85%EB%A7%88%EC%9D%8C%EB%8C%80%EB%A1%9C%E2%80%85%EC%A0%95%EB%A0%AC%ED%95%98%EA%B8%B0)
-- 💡 메모: `sort()`를 사용하여 푼 문제입니다. `map()`을 통해 key로 원본 문자열, value로 n번째의 문자열을 객체로 만들고자 했는데 굳이 그렇게까지는 안해도 된다고 판단을 했습니다.
-  주현님이 `localeCompare()`에 대해 설명해준 것이 기억이 나서 사용을 시작함. `localeCompare()`은 비교값에 위치에 따라 1,0,-1을 반환하는 것. `sort()`와 같이 활용하여 간단하게 정렬을 완료.
-  <br>
-
-          return strings.sort((a,b) =>
-      		a[n] === b[n] ? a.localeCompare(b) : a[n].localeCompare(b[n]);
-
-- notion: [Link](https://www.notion.so/12915-1fa389abd4258010857bfe3c4ae183a5?pvs=4)
+  for (let j = 0; j < n; j++) {
+    if (mapA[j] === "1" || mapB[j] === "1") dataString += "#";
+    else dataString += " ";
+  }
+  answer.push(dataString);
+}
+```
 
 ---
 
-### Day 4 (05.22)
+### Day 3 (06.04)
 
-- 🔗 문제: [138477. 명예의 전당(1)](https://school.programmers.co.kr/learn/courses/30/lessons/138477)
-- 📁 코드: [lv1. 명예의 전당 (1)](https://github.com/jamminP/javascript-algorithms/tree/main/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4/1/138477.%E2%80%85%EB%AA%85%EC%98%88%EC%9D%98%E2%80%85%EC%A0%84%EB%8B%B9%E2%80%85%EF%BC%881%EF%BC%89)
-- 💡 메모: 이번 문제는 상위 n명 중에서 최하위인 사람을 return해서 저장하는 문제였습니다. 처음에는 `for` loop와 `sort()`를 사용하여 문제를 풀었지만, `reduce`와 친해지기 위해서 `reduece`를 사용하여 새롭게 풀어봤습니다. 하지만 막상 풀고난 뒤에 보니 완전히 `reduce`를 활용한 거 같지는 않아 추가적으로 학습을 하고자 합니다.
-  <br>
+- 🔗 문제: [176963.추억 점수](https://school.programmers.co.kr/learn/courses/30/lessons/176963)
+- 📁 코드: [lv1. 추억 점수 - 176963](https://github.com/jamminP/javascript-algorithms/tree/main/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4/1/176963.%E2%80%85%EC%B6%94%EC%96%B5%E2%80%85%EC%A0%90%EC%88%98)
+- 💡 메모: 이번 문제는 `Map`을 사용하여 key와 value값을 트리거하여 sum을 하여 retunr하는 배열에 넣으면 되는 문제였습니다. 그래서 name을 key값, yearnig을 value값으로 photo에 있는 2중 배열의 값에서 각각 추출하여 더했습니다.
 
-          function solution(k, score) {
-              var answer = [];
+```js
+for (let j = 0; j < photo.length; j++) {
+  let sum = 0;
 
-              const data = [];
+  for (let k = 0; k < photo[j].length; k++) {
+    if (nameMap.has(photo[j][k])) sum += nameMap.get(photo[j][k]);
+  }
 
-              score.reduce((acc,curr) => {
-                  if(data.length < k){
-                      data.push(curr);
-                      data.sort((a,b) => a-b);
-                      answer.push(data[0]);
-                  }
-                  else{
-                      if(data[0] < curr){
-                          data.push(curr);
-                          data.shift();
-                          data.sort((a,b) => a-b);
-                          answer.push(data[0]);
-                      }else{
-                          answer.push(data[0]);
-                      }
-                  }
-              },[]);
-
-              return answer;
-          }
-
-<br>
-
-- notion: [Link](https://www.notion.so/138477-1-1fb389abd42580b98302c519f041bfa9?pvs=4)
+  answer.push(sum);
+}
+```
 
 ---
 
-### Day 5 (05.23)
+### Day 4 (06.05)
 
-- 🔗 문제: [12980. 점프와 순간 이동](https://school.programmers.co.kr/learn/courses/30/lessons/12980)
-- 📁 코드: [lv2. 점프와 순간 이동](https://github.com/jamminP/javascript-algorithms/tree/main/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4/2/12980.%E2%80%85%EC%A0%90%ED%94%84%EC%99%80%E2%80%85%EC%88%9C%EA%B0%84%E2%80%85%EC%9D%B4%EB%8F%99)
-- 💡 메모: 이번 문제는 가장 적은 cost를 사용하여 움직이는 방법이였습니다. 0부터 N까지 가기위해서 K값이 소요하는 이동과 현재까지 이동한 거리에 \* 2만큼 이동하는 텔레포트의 비용은 0인 문제에서 가장 적은 합계 cost값을 구해야했습니다. K의 값은 정해지지 않았기 때문에 가장 적은 1을 선정하고, 2배를 이동하는 no cost를 최대한 활용하기 위해 2진수에서 1값인 것만 추출하는 방식을 사용했습니다.
-  <br>
-
-          function solution(n){
-              return n.toString(2).split('').filter(e => e === '1').length;
-          }
-
-<br>
-
-- notion: [Link](https://www.notion.so/12980-1fc389abd42580f6887efaa8686a8b86?pvs=4)
+- 💡 메모: 나태하여 못풀었습니다.
 
 ---
 
-### Day 6 (05.24)
+### Day 5 (06.06)
 
-- 🔗 문제: [42885. 구명보트](https://school.programmers.co.kr/learn/courses/30/lessons/42885)
-- 📁 코드: [lv2. 구명보트](https://github.com/jamminP/javascript-algorithms/tree/main/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4/2/42885.%E2%80%85%EA%B5%AC%EB%AA%85%EB%B3%B4%ED%8A%B8)
-- 💡 메모: 이번 문제는 그리디 알고리즘을 사용했습니다. 그 중 시작과 끝점의 이동을 사용하는 투 포인터 방식을 응용하여 문제를 해결했습니다. 최대 2명씩 탈 수 있는 보트에 사람을 넣어서 움직이는 최소의 경우수를 찾아야 했기에, `sort()`를 통해 값을 정렬하고, 가장 큰값과 가장 작은 값을 이동하면서 찾을 수 있도록 했습니다. 제한을 넘기지 않는다면 start값을 올려 위치를 올려 limit에 걸리게 되면 end값을 줄이며 answer을 올리게 했습니다.
-
-<br>
-
-    let start = 0;
-    let end = people.length - 1;
-
-    while(start <= end ){
-        if(people[start] + people[end] <= limit){
-            start++;
-        }
-        end--;
-        answer++;
-    }
-
-<br>
+- 💡 메모: 현충일
 
 ---
 
-### Day 7 (05.25)
+### Day 6 (06.07)
 
-- 🔗 문제: [138476. 귤 고르기](https://school.programmers.co.kr/learn/courses/30/lessons/138476)
-- 📁 코드: [lv2. 귤 고르기](https://github.com/jamminP/javascript-algorithms/tree/main/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4/2/138476.%E2%80%85%EA%B7%A4%E2%80%85%EA%B3%A0%EB%A5%B4%EA%B8%B0)
-- 💡 메모: 이번 문제는 종류를 최소한하여, k의 값을 얻는 방법을 구하는 문제였습니다. 이러한 문제는 `Map`을 사용하여, 각각의 key값에 value를 늘려서 최소한의 가짓수를 구해야하는 것이기 때문에 `sort()`를 하여 가장 많은 경우의 수를 가진 것의 value의 값을 빼는 것으로 연산을 진행했습니다.
+- 💡 메모: redux를 공부하느라 못풀었습니다.
 
-- notion: [Link](https://www.notion.so/138476-1fe389abd42580708863d30e1671f248?pvs=4)
+---
+
+### Day 7 (06.08)
+
+- 🔗 문제: [131701. 연속 부분 수열 합의 개수](https://school.programmers.co.kr/learn/courses/30/lessons/131701)
+- 📁 코드: [lv2. 연속 부분 수열 합의 개수 - 131701](https://github.com/jamminP/javascript-algorithms/tree/main/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4/2/131701.%E2%80%85%EC%97%B0%EC%86%8D%E2%80%85%EB%B6%80%EB%B6%84%E2%80%85%EC%88%98%EC%97%B4%E2%80%85%ED%95%A9%EC%9D%98%E2%80%85%EA%B0%9C%EC%88%98)
+- 💡 메모: 이번 문제는 원형 수열에서 나올 수 있는 모든 경우의 수를 찾는 문제였습니다. 원형이기 때문에 포인터로 풀 수 있지만 간단하게 두 개를 붙여서 풀었습니다. `dataString = elements.concat(elements)` 그 뒤 n ~ n -1번까지 돌면서 `slice`를 활용하여 배열로 나눈 뒤, `set`으로 중복을 피하며 reduce로 값을 추가하였습니다. 최종적으로 원하는 것은 갯수이기 때문에 `Set`의 size를 return 하였습니다.
+
+```js
+for (let i = 0; i < length; i++) {
+  // i가 start값.
+  set.add(dataString[i]);
+  for (let j = 1; j < length + 1; j++) {
+    arr = dataString.slice(i, i + j);
+    set.add(arr.reduce((a, b) => a + b, 0));
+  }
+}
+
+answer = set.size;
+```
 
 ---
 
 ## 📌 이번 주 회고
 
-- 아직 다른 언어로 알고리즘을 구축하는 것이 좀 더 편하여서 JS에서 좀 더 편하게 할 수 있는 방식을 어렵게 푸는 경향이 사라지지 않았다는 생각이 많이 들었습니다. 좀 더 JS로 풀다보면 익숙해지지 않을까 생각합니다.
+- 이번 주는 알고리즘 공부를 좀 나태하게 진행한 거 같습니다. 좀 더 열심히 해야 겠다고 생각들었습니다.
