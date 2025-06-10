@@ -30,6 +30,23 @@
 
 ---
 
+### Day 5 (05.30)
+
+- 🔗 문제: [[level 1] 카드 뭉치 - 159994](https://school.programmers.co.kr/learn/courses/30/lessons/159994)
+- 📁 코드: [shift를 이용한 풀이](https://github.com/sysysysyb/Study_Algorithm/tree/39b41b588132924d6da8139db9baa83f45f033ce/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4/1/159994.%E2%80%85%EC%B9%B4%EB%93%9C%E2%80%85%EB%AD%89%EC%B9%98)
+- 💡 메모: 두 카드의 맨 앞글자를 비교하고 해당하는 것이 있으면 shift 메소드로 삭제해가는 방식으로 풀었던 문제다. card의 요소의 개수가 10 이하로 낮게 지정되어 있던 문제였기 때문에 shift를 사용해도 성능에 크게 문제가 없었다.
+
+---
+
+### Day 6 (05.31)
+
+- 🔗 문제: [[level 1] [1차] 비밀지도 - 17681](https://school.programmers.co.kr/learn/courses/30/lessons/17681)
+- 📁 코드: [toString과 padStart를 이용한 풀이](https://github.com/sysysysyb/Study_Algorithm/tree/fd5c568e01c7c140c22253560c1d2e2a3ce3bd74/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4/1/17681.%E2%80%85%EF%BC%BB1%EC%B0%A8%EF%BC%BD%E2%80%85%EB%B9%84%EB%B0%80%EC%A7%80%EB%8F%84)
+- 💡 메모: 10진수를 무조건 5자리의 2진수로 변환해야 된다는 점이 중요했던 문제였는데, toString(2)를 통해 10진수를 2진수로 바꿔주고 padStart를 통해 변환한 2진수가 5자리가 아니면 앞의 비는 곳은 0으로 채우도록 설정했다. 
+
+---
+
 ## 📌 이번 주 회고
 
-- ...
+- string이나 array의 다양한 메소드들을 문제 풀이에 잘 활용했다.
+- 어떤 문제는 수학적 접근을 통해 더 간편하게 풀 수 있다는 것을 알았다.
