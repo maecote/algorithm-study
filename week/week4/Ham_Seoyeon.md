@@ -16,7 +16,7 @@
 
 - 🔗 문제: [Easy) 3442. Maximum Difference Between Even and Odd Frequency I](https://leetcode.com/problems/maximum-difference-between-even-and-odd-frequency-i/?envType=daily-question&envId=2025-06-10)
 - 📁 코드: [frequency map의 이용](https://github.com/makee-ham/algo-gogo/tree/main/3753-maximum-difference-between-even-and-odd-frequency-i)
-- 💡 메모: 힌트에 적혀있던 말: "Use a frequency map to identify the maximum odd and minimum even frequencies. Then, calculate their difference." 대체 frequency map이 뭔가 해서 찾아봤더니 정리가 잘 되어 있는 블로그 글이 있었다. 참고 요망! [JavaScript Algorithms Techniques: Frequency Map](https://ipraveen.medium.com/javascript-algorithms-techniques-frequency-map-1ddee0829c60)
+- 💡 메모: 재현 님의 퀘스트 중 "빈도수 세기 패턴"에 해당! + 힌트에 적혀있던 말: "Use a frequency map to identify the maximum odd and minimum even frequencies. Then, calculate their difference." frequency map이 뭔가 해서 찾아봤더니(영어로 하니까 못 알아먹은 1인) 정리가 간단하게 잘 되어 있는 블로그 글이 있었다. 참고 요망! [JavaScript Algorithms Techniques: Frequency Map](https://ipraveen.medium.com/javascript-algorithms-techniques-frequency-map-1ddee0829c60)
 
 ### Day 3 (05.28)
 
