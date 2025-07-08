@@ -152,7 +152,7 @@
     </tbody>
   </table>
 
-  ![입출력 예 1 image](image.png)
+  ![입출력 예 1 image](image_syb.png)
 
   현재 페인트 칠이 가능한 첫번째 벽을 cw, 마지막 벽을 nw로 지정하고 for...of 반복문을 돌려서 요소가 nw보다 크면 페인트칠을 한 번 더 해야하기 때문에 count에 1을 더하는 식으로 코드를 작성했다.
   (지금 생각해보니 current wall이랑 next wall이 아니라 first wall, last wall라고 변수명을 지었으면 더 알아보기 쉬웠을 것 같다.)
