@@ -8,6 +8,7 @@
 
 ### Day 1 (04.21)
 
+
 - 🔗 문제: [숫자 비교하기](https://school.programmers.co.kr/learn/courses/30/lessons/120807)
 - 📁 코드: [120807. 숫자 비교하기](https://github.com/jjub0217/Algorithm_-Training/tree/main/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4/0/120807.%E2%80%85%EC%88%AB%EC%9E%90%E2%80%85%EB%B9%84%EA%B5%90%ED%95%98%EA%B8%B0)
 - 💡 메모:
@@ -23,5 +24,5 @@
 ---
 
 ## 📌 이번 주 회고
+.... 후회.,..
 
--
